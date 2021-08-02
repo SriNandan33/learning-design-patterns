@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPatternDucks", "StrategyPatternDucks\StrategyPatternDucks.csproj", "{701DCBC5-7365-4ACC-8D1C-BBEF399B4F10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPatternPayments", "StrategyPatternPayments\StrategyPatternPayments.csproj", "{CE3CC82E-B7D3-48B1-8D52-F9A0DACAC589}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{701DCBC5-7365-4ACC-8D1C-BBEF399B4F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{701DCBC5-7365-4ACC-8D1C-BBEF399B4F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{701DCBC5-7365-4ACC-8D1C-BBEF399B4F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3CC82E-B7D3-48B1-8D52-F9A0DACAC589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3CC82E-B7D3-48B1-8D52-F9A0DACAC589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3CC82E-B7D3-48B1-8D52-F9A0DACAC589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3CC82E-B7D3-48B1-8D52-F9A0DACAC589}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
