@@ -12,7 +12,7 @@ namespace StrategyPatternDucks
 
         public override void Display()
         {
-            Console.WriteLine("I am ReadHead Duck");
+            Console.WriteLine("I am RedHead Duck");
         }
     }
 }

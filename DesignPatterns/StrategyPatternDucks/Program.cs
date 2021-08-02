@@ -1,50 +1,41 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace StrategyPatternDucks
 {
     internal static class Program
     {
+        private static void Simulate(Duck duck){
+            duck.Display();
+            duck.Swim();
+            duck.Fly();
+            duck.Quack();
+        }
         private static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Duck Simulator\n");
+            var ducks = new List<Duck>
+            {
+                new RedHeadDuck(),
+                new MallardDuck(),
+                new RubberDuck(),
+                new DecoyDuck()
+            };
 
-            var mallardDuck = new MallardDuck();
-            mallardDuck.Display();
-            mallardDuck.Swim();
-            mallardDuck.Fly();
-            mallardDuck.Quack();
-
-            var redHeadDuck = new RedHeadDuck();
-            redHeadDuck.Display();
-            redHeadDuck.Swim();
-            redHeadDuck.Fly();
-            redHeadDuck.Quack();
-
-            var rubberDuck = new RubberDuck();
-            rubberDuck.Display();
-            rubberDuck.Swim();
-            rubberDuck.Fly();
-            rubberDuck.Quack();
-
-            var decoyDuck = new DecoyDuck();
-            decoyDuck.Display();
-            decoyDuck.Swim();
-            decoyDuck.Fly();
-            decoyDuck.Quack();
+            foreach(var duck in ducks)
+            {
+                Simulate(duck);
+            }
             
-            Console.WriteLine("Shooting redHeadDuck");
+            Console.WriteLine("\nShooting redHeadDuck");
+            var redHeadDuck = ducks.First();
             redHeadDuck.FlyBehaviour = new FlyNoWay();
-            redHeadDuck.Display();
-            redHeadDuck.Swim();
-            redHeadDuck.Fly();
-            redHeadDuck.Quack();
+            Simulate(redHeadDuck);
             
             Console.WriteLine("\nHelping RedHead duck with Rocket");
             redHeadDuck.FlyBehaviour = new FlyWithRocket();
-            redHeadDuck.Display();
-            redHeadDuck.Swim();
-            redHeadDuck.Fly();
-            redHeadDuck.Quack();
+            Simulate(redHeadDuck);
         }
     }
 }
