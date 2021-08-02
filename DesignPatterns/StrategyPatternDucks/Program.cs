@@ -17,8 +17,8 @@ namespace StrategyPatternDucks
             Console.WriteLine("Welcome to Duck Simulator\n");
             var ducks = new List<Duck>
             {
-                new RedHeadDuck(),
                 new MallardDuck(),
+                new RedHeadDuck(),
                 new RubberDuck(),
                 new DecoyDuck()
             };
@@ -28,14 +28,14 @@ namespace StrategyPatternDucks
                 Simulate(duck);
             }
             
-            Console.WriteLine("\nShooting redHeadDuck");
-            var redHeadDuck = ducks.First();
-            redHeadDuck.FlyBehaviour = new FlyNoWay();
-            Simulate(redHeadDuck);
+            Console.WriteLine("\nShooting a duck");
+            var woundedDuck = ducks.First();
+            woundedDuck.FlyBehaviour = new FlyNoWay();
+            Simulate(woundedDuck);
             
-            Console.WriteLine("\nHelping RedHead duck with Rocket");
-            redHeadDuck.FlyBehaviour = new FlyWithRocket();
-            Simulate(redHeadDuck);
+            Console.WriteLine("\nHelping the duck to fly with Rocket");
+            woundedDuck.FlyBehaviour = new FlyWithRocket();
+            Simulate(woundedDuck);
         }
     }
 }
