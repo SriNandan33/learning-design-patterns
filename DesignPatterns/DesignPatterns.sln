@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPatternPayments", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPatternDucksAndDrones", "AdapterPatternDucksAndDrones\AdapterPatternDucksAndDrones.csproj", "{D1C79535-E172-47D3-B254-920CB8C37FB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPatternPaymentGateway", "AdapterPatternPaymentGateway\AdapterPatternPaymentGateway.csproj", "{416EB57C-AF6A-4932-A258-7BB823943BA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{D1C79535-E172-47D3-B254-920CB8C37FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1C79535-E172-47D3-B254-920CB8C37FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1C79535-E172-47D3-B254-920CB8C37FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416EB57C-AF6A-4932-A258-7BB823943BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416EB57C-AF6A-4932-A258-7BB823943BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416EB57C-AF6A-4932-A258-7BB823943BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416EB57C-AF6A-4932-A258-7BB823943BA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
